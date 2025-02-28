@@ -4,7 +4,33 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Dahlia Coastal Living</title>
+
+    <script>
+      // Array of image numbers
+      const imageNumbers = [
+        1907, 1914, 1917, 1919, 1920, 1921, 1923, 1924, 1925, 1926, 
+        1930, 1931, 1935, 1938, 1943, 1946, 1949, 1951, 1952, 1953, 
+        1954, 1957, 1963, 1969, 1972, 1975, 1979, 1981, 1982
+      ];
+
+      // Function to dynamically create preload link elements
+      const preloadImages = () => {
+        const head = document.querySelector('head');
+        
+        // Loop through the image numbers and create <link> tags
+        imageNumbers.forEach((number) => {
+          const link = document.createElement('link');
+          link.rel = 'preload';
+          link.href = `/images/IMG_${number}.jpg`;
+          link.as = 'image';
+          head.appendChild(link);  // Append to the <head> section
+        });
+      };
+
+      // Run the preload function when the page is loaded
+      window.onload = preloadImages;
+    </script>
   </head>
   <body>
     <div id="root"></div>
