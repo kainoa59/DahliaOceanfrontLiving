@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './Gallery.css';
 
 const Gallery = () => {
     // Array of image numbers used for constructing the image file names
@@ -14,7 +15,7 @@ const Gallery = () => {
         // Loop through imageNumbers array and preload images
         imageNumbers.forEach((number) => {
             const img = new Image();
-            img.src = `/images/IMG_${number}.jpg`;  // Construct image path dynamically
+            img.src = `/Compressed_Images/IMG_${number}.jpeg`;  // Construct image path dynamically
         });
     }, []);  // Empty dependency array ensures this runs only once when the component mounts
 
@@ -26,8 +27,7 @@ const Gallery = () => {
     return (
         <div className="container-fluid" style={{ paddingLeft: '5%', paddingRight: '5%' }}>
             <div className="container text-center">
-                <h1>Gallery</h1>  {/* Main heading */}
-                <p>Check out our property gallery below!</p>  {/* Description */}
+                <h1>Property Gallery</h1>  {/* Main heading */}
             </div>
 
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
@@ -48,7 +48,7 @@ const Gallery = () => {
                 <div className="carousel-inner">
                     {imageNumbers.map((number, index) => (
                         <div key={number} className={`carousel-item ${index === activeIndex ? 'active' : ''}`}>
-                            <img className="d-block w-100" src={`/images/IMG_${number}.jpg`} alt={`Slide ${index + 1}`} />
+                            <img className="d-block w-100" src={`/Compressed_Images/IMG_${number}.jpeg`} alt={`Slide ${index + 1}`} />
                         </div>
                     ))}
                 </div>
@@ -70,7 +70,7 @@ const Gallery = () => {
                     <div className="col-2 mb-2" key={index} style={{ display: 'flex', justifyContent: 'center' }}>
                         <img 
                             className="img-thumbnail"
-                            src={`/images/IMG_${number}.jpg`}
+                            src={`/Compressed_Images/IMG_${number}.jpeg`}
                             alt={`Thumbnail ${index + 1}`}
                             style={{ cursor: 'pointer' }}
                             onClick={() => handleThumbnailClick(index)}  // Set active index when a thumbnail is clicked

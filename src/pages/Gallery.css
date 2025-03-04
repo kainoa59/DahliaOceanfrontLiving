@@ -1,0 +1,9 @@
+/* GALLERY PAGE */
+/* Hide numbers in carousel indicators */
+.carousel-indicators li {
+    list-style-type: none; /* Remove any default list styling (including numbers) */
+  }
+  
+  .carousel-indicators li::after {
+    content: ""; /* Ensures no numbers or text are inserted after each indicator */
+  }
