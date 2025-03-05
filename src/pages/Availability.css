@@ -1,0 +1,149 @@
+html, body, main {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;  /* Ensures the main content stretches to take available space */
+    height: 100%;
+}
+
+.background {
+    background: linear-gradient(to bottom, rgba(37, 127, 223, 0.879) 0%, rgba(125, 186, 232, 0.524) 100%);
+    flex-grow: 1;  /* Allow the background to take the remaining space */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15vh !important;
+}
+
+.content-container {
+    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.5), -12px 0 8px -4px rgba(31, 73, 125, 0.5);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.631) 0%, rgba(255, 255, 255, 0.353) 100%);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    padding-top: 2rem; /* Add padding to the top to create space */
+    width: 100%;
+}
+
+.all-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    width: 100%;
+}
+
+.home-title {
+    color: aliceblue;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.main-row {
+    min-height: 35vh;
+}
+
+/* Ensure the image takes up 70% of the card's height */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100% !important;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+/* Image container takes up the top 70% of the card */
+.image-container {
+    width: 100%;
+    height: 60%; /* 70% of the card height */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover; /* Crop to fit the container without distortion */
+}
+
+/* Card body takes the remaining 30% */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content */
+    align-items: center;
+    height: 40%;
+    overflow: hidden; /* Ensures text doesn't spill out */
+}
+
+/* Ensure badge section does not overflow */
+.card-body .row {
+    width: 100%;
+    margin: 0; /* Remove default margin */
+    display: flex;
+}
+
+.last-card {
+    max-height: 80%;
+}
+
+/* Default font size (large for 3-column layout) */
+.card-title {
+    font-size: 2vw;
+    transition: font-size 0.2s ease-in-out;
+    margin-bottom: 0px !important;
+    font-weight: 700;
+}
+
+.D-model-title{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+/* Medium screens (2 columns) */
+@media (max-width: 992px) { /* Bootstrap's md breakpoint */
+    .card-title {
+        font-size: 2vw; /* Shrinks slightly */
+        transition: font-size 0.2s ease-in-out;
+    }
+    .D-model-title{
+        font-size: 2vw;
+    }
+}
+
+/* Small screens (1 column) */
+@media (max-width: 768px) { /* Bootstrap's sm breakpoint */
+    .card-title {
+        font-size: 3.5vw; /* Expands again */
+        transition: font-size 0.2s ease-in-out;
+    }
+    .D-model-title{
+        font-size: 2vw;
+    }
+}
+
+/* Extra small screens (tiny mobile screens) */
+@media (max-width: 480px) {
+    .card-title {
+        font-size: 3.5vw; /* Shrinks for very small screens */
+        transition: font-size 0.2s ease-in-out;
+    }
+    .D-model-title{
+        font-size: 2vw;
+    }
+}
+
+.card-text {
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem); /* Ensures it shrinks properly */
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

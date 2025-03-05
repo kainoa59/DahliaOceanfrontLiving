@@ -1,11 +1,11 @@
 /* FOOTER STYLING */
 
 .footer {
-    background-color: #333;
+    background-color: #2C6299;
     color: white;
-    position: relative;
     width: 100%;
-    position: absolute;
+    height: 4vh;
+    position: fixed;
     bottom: 0;
     box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.5), inset 0px -10px 25px rgba(0, 0, 0, 0.5);
   }
@@ -13,12 +13,15 @@
   
   .footer p {
     margin: 0;
-    font-size: 14px;
+    font-size: 1.2vh;
     position: relative;
   }
   
   .footer .container {
     /* stuff here */
     margin: 0 auto;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }

@@ -30,6 +30,7 @@ body.home-page {
     font-weight: 700;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     margin-bottom: 3%;
+    font-size: clamp(1rem, 5vw, 3rem) !important;
 }
 
 .hrTag {

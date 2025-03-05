@@ -22,10 +22,10 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/"> {/* Ensures React Router does not interfere with static file requests */}
       <div className="main">
         <header>
-          <nav className="navbar navbar-expand-lg bg-body-tertiary">
+          <nav className="navbar navbar-expand-lg bg-body-tertiary py-0">
             <div className="container-fluid px-4">
               <NavLink className="navbar-brand" to="/">Dahlia Coastal Living IB</NavLink>
               <button
@@ -49,7 +49,7 @@ function App() {
                     <NavLink className="nav-link" to="/residence-property" onClick={handleNavItemClick}>Residence & Property</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/contact-availability" onClick={handleNavItemClick}>Contact/Availability</NavLink>
+                    <NavLink className="nav-link" to="/contact-availability" onClick={handleNavItemClick}>Availability</NavLink>
                   </li>
                   <li className="nav-item">
                     <NavLink className="nav-link" to="/gallery" onClick={handleNavItemClick}>Gallery</NavLink>
