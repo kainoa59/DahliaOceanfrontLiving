@@ -1,5 +1,5 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+// import { StrictMode } from 'react';
+// import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import { useRef } from 'react';
 import './index.css';
@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <Router basename="/"> {/* Ensures React Router does not interfere with static file requests */}
+    <Router basename="/DahliaOceanfrontLiving"> {/* Ensures React Router does not interfere with static file requests */}
       <div className="main">
         <header>
           <nav className="navbar navbar-expand-lg bg-body-tertiary py-0">
