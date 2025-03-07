@@ -15,21 +15,21 @@
       ];
 
       // Function to dynamically create preload link elements
-      const preloadImages = () => {
-        const head = document.querySelector('head');
+      // const preloadImages = () => {
+      //   const head = document.querySelector('head');
         
-        // Loop through the image numbers and create <link> tags
-        imageNumbers.forEach((number) => {
-          const link = document.createElement('link');
-          link.rel = 'preload';
-          link.href = `/Compressed_Images/IMG_${number}.jpeg`;
-          link.as = 'image';
-          head.appendChild(link);  // Append to the <head> section
-        });
-      };
+      //   // Loop through the image numbers and create <link> tags
+      //   imageNumbers.forEach((number) => {
+      //     const link = document.createElement('link');
+      //     link.rel = 'preload';
+      //     link.href = `/Compressed_Images/IMG_${number}.jpeg`;
+      //     link.as = 'image';
+      //     head.appendChild(link);  // Append to the <head> section
+      //   });
+      // };
 
       // Run the preload function when the page is loaded
-      window.onload = preloadImages;
+      // window.onload = preloadImages;
     </script>
   </head>
   <body>
