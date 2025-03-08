@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <Router basename="/DahliaOceanfrontLiving">
+    <Router basename="/">
       <div className="main">
         <header>
           <nav className="navbar navbar-expand-lg bg-body-tertiary py-0">
