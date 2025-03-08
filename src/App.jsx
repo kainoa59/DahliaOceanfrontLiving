@@ -24,7 +24,7 @@ function App() {
       <div className="main">
         <header>
           <nav className="navbar navbar-expand-lg bg-body-tertiary py-0">
-            <div className="container-fluid">
+            <div className="container-fluid pb-0">
               <NavLink className="navbar-brand px-4" to="/">Dahlia Coastal Living IB</NavLink>
               <button
                 className="navbar-toggler px-4"
