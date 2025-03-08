@@ -39,7 +39,7 @@ function App() {
               >
                 <span className="navbar-toggler-icon"></span>
               </button>
-              <div className="collapse navbar-collapse" id="navbarSupportedContent" ref={navRef}>
+              <div className="collapse navbar-collapse my-4" id="navbarSupportedContent" ref={navRef}>
                 <hr/>
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li className="nav-item">
