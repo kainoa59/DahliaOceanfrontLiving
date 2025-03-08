@@ -26,10 +26,10 @@ function App() {
       <div className="main">
         <header>
           <nav className="navbar navbar-expand-lg bg-body-tertiary py-0">
-            <div className="container-fluid px-4">
-              <NavLink className="navbar-brand" to="/">Dahlia Coastal Living IB</NavLink>
+            <div className="container-fluid">
+              <NavLink className="navbar-brand px-4" to="/">Dahlia Coastal Living IB</NavLink>
               <button
-                className="navbar-toggler"
+                className="navbar-toggler px-4"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -40,8 +40,7 @@ function App() {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse my-4" id="navbarSupportedContent" ref={navRef}>
-                <hr/>
-                <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul className="navbar-nav ms-auto mb-2 mb-lg-0 px-4">
                   <li className="nav-item">
                     <NavLink className="nav-link" to="/" onClick={handleNavItemClick}>Home</NavLink>
                   </li>
