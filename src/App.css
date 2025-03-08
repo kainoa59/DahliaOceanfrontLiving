@@ -35,7 +35,7 @@ html, body, #root {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better readability */
 }
 
-.navbar .navbar-collapse {
+.navbar .navbar-collapse.show {
   background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(185, 208, 229, 0.956) 100%);
 }
 
