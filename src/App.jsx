@@ -37,7 +37,7 @@ function App() {
               >
                 <span className="navbar-toggler-icon"></span>
               </button>
-              <div className="collapse navbar-collapse" id="navbarSupportedContent" ref={navRef}>
+              <div className="collapse navbar-collapse pb-2" id="navbarSupportedContent" ref={navRef}>
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0 px-4">
                   <li className="nav-item">
                     <NavLink className="nav-link" to="/" onClick={handleNavItemClick}>Home</NavLink>
