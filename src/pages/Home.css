@@ -19,7 +19,7 @@ body.home-page {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: radial-gradient(circle closest-corner, rgba(23, 106, 42, 0) 30%, rgba(255, 255, 255, 0.542) 100%), url('../public/Compressed_Images/IMG_1903.jpg');
+    background: radial-gradient(circle closest-corner,#176a2a00 30%,#ffffff8a), url(/DahliaOceanfrontLiving/Compressed_Images/IMG_1903.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
