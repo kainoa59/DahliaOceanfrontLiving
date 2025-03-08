@@ -20,11 +20,11 @@ function App() {
   };
 
   return (
-    <Router basename={import.meta.env.MODE === 'production' ? "/DahliaOceanfrontLiving" : "/"}>
+    <Router basename="/DahliaOceanfrontLiving">
       <div className="main">
         <header>
           <nav className="navbar navbar-expand-lg bg-body-tertiary py-0">
-            <div className="container-fluid pb-2">
+            <div className="container-fluid">
               <NavLink className="navbar-brand px-4" to="/">Dahlia Coastal Living IB</NavLink>
               <button
                 className="navbar-toggler px-4"
