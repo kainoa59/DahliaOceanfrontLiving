@@ -26,7 +26,7 @@ const ResidenceProperty = () => {
                         <div className="row experience mb-4">
                             <h6>
                                 Enjoy a peaceful environment with the convenience of stores, schools, restaurants, and the beach within blocks!
-                                Take a walk to the sand, relax with the sunset, and enjoy neighborhood events year-round. We're a small community
+                                Take a walk to the sand, relax with the sunset, and enjoy neighborhood events year-round. We&apos;re a small community
                                 of 16 units close to shopping, entertainment, and services. All with easy access to public transportation and military bases.
                                 Come enjoy the activities, natural attractions, and interests that Dahlia Coastal Living at Imperial Beach has to offer:
                             </h6>
@@ -34,7 +34,7 @@ const ResidenceProperty = () => {
                                 <hr style={{ width: '100%' }}></hr>
                             </div>
                             <div className={`col-12 col-md-6 text-start ${isMobile ? 'mb-4' : ''}`}>
-                                <img src="/Compressed_Images/IMG_8124.jpg" alt="Beach" className="img-fluid" />
+                                <img src="/DahliaOceanfrontLiving/Compressed_Images/IMG_8124.jpg" alt="Beach" className="img-fluid" />
                             </div>
                             <div className="col-12 col-md-6 d-flex align-items-center text-start">
                                 <ul>
@@ -63,7 +63,7 @@ const ResidenceProperty = () => {
                                 </h6>
                             </div>
                             <div className='col-12 col-md-6'>
-                                <img src="/Compressed_Images/IMG_2664_Original.jpeg" alt="Property" className="img-fluid" />
+                                <img src="/DahliaOceanfrontLiving/Compressed_Images/IMG_2664_Original.jpeg" alt="Property" className="img-fluid" />
                             </div>
                         </div>
                         <div className='hr-tag'>

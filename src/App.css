@@ -35,6 +35,10 @@ html, body, #root {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better readability */
 }
 
+.navbar .navbar-collapse {
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(185, 208, 229, 0.956) 100%);
+}
+
 .navbar .navbar-brand {
   color: #2c6299; /* Change the color of the navbar brand */
   font-weight: 700;
