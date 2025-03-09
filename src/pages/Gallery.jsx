@@ -16,7 +16,7 @@ const Gallery = () => {
         // Loop through imageNumbers array and preload images
         imageNumbers.forEach((number) => {
             const img = new Image();
-            img.src = `/DahliaOceanfrontLiving/Compressed_Images/IMG_${number}.jpeg`;  // Construct image path dynamically
+            img.src = `/Compressed_Images/IMG_${number}.jpeg`;  // Construct image path dynamically
         });
     }, []);  // Empty dependency array ensures this runs only once when the component mounts
 
@@ -54,7 +54,7 @@ const Gallery = () => {
                         <div className="carousel-inner mb-3">
                             {imageNumbers.map((number, index) => (
                                 <div key={number} className={`carousel-item ${index === activeIndex ? 'active' : ''}`}>
-                                    <img className="d-block w-100" src={`/DahliaOceanfrontLiving/Compressed_Images/IMG_${number}.jpeg`} alt={`Slide ${index + 1}`} />
+                                    <img className="d-block w-100" src={`/Compressed_Images/IMG_${number}.jpeg`} alt={`Slide ${index + 1}`} />
                                 </div>
                             ))}
                         </div>
@@ -81,7 +81,7 @@ const Gallery = () => {
                             <div className="col-4 col-sm-4 col-md-2 mb-3 d-flex justify-content-center" key={index} style={{ display: 'flex', justifyContent: 'center' }}>
                                 <img
                                     className="img-thumbnail p-0"
-                                    src={`/DahliaOceanfrontLiving/Compressed_Images/IMG_${number}.jpeg`}
+                                    src={`/Compressed_Images/IMG_${number}.jpeg`}
                                     alt={`Thumbnail ${index + 1}`}
                                     style={{ cursor: 'pointer' }}
                                     onClick={() => handleThumbnailClick(index)}  // Set active index when a thumbnail is clicked

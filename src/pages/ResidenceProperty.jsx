@@ -34,7 +34,7 @@ const ResidenceProperty = () => {
                                 <hr style={{ width: '100%' }}></hr>
                             </div>
                             <div className={`col-12 col-md-6 text-start ${isMobile ? 'mb-4' : ''}`}>
-                                <img src="/DahliaOceanfrontLiving/Compressed_Images/IMG_8124.jpg" alt="Beach" className="img-fluid" />
+                                <img src="/Compressed_Images/IMG_8124.jpg" alt="Beach" className="img-fluid" />
                             </div>
                             <div className="col-12 col-md-6 d-flex align-items-center text-start">
                                 <ul>
@@ -63,7 +63,7 @@ const ResidenceProperty = () => {
                                 </h6>
                             </div>
                             <div className='col-12 col-md-6'>
-                                <img src="/DahliaOceanfrontLiving/Compressed_Images/IMG_2664_Original.jpeg" alt="Property" className="img-fluid" />
+                                <img src="/Compressed_Images/IMG_2664_Original.jpeg" alt="Property" className="img-fluid" />
                             </div>
                         </div>
                         <div className='hr-tag'>

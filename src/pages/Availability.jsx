@@ -40,7 +40,7 @@ const Availability = () => {
                                     {rowListings.map(({ number, unit1, unit2 }) => (
                                         <AvailabilityRow
                                             key={number}
-                                            imageSrc={`/DahliaOceanfrontLiving/Compressed_Images/IMG_${number}.jpeg`}
+                                            imageSrc={`/Compressed_Images/IMG_${number}.jpeg`}
                                             unit1={unit1}
                                             unit2={unit2}
                                         />
@@ -62,7 +62,7 @@ const Availability = () => {
                                 <div className="card rounded-0 last-card">
                                     <div className="image-container">
                                         <img
-                                            src="/DahliaOceanfrontLiving/Compressed_Images/IMG_1935.jpeg"
+                                            src="/Compressed_Images/IMG_1935.jpeg"
                                             className="card-img-top rounded-0"
                                             alt="Featured"
                                             style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
