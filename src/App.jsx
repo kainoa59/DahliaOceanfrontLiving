@@ -20,8 +20,8 @@ function App() {
   };
 
   return (
-    // ran build
-    <Router basename="/DahliaOceanfrontLiving"> {/* Set the basename to the GitHub Pages subdirectory */}
+    // ran
+    <Router basename="/"> {/* Set the basename to the GitHub Pages subdirectory */}
       <div className="main">
         <header>
           <nav className="navbar navbar-expand-lg bg-body-tertiary py-0">
