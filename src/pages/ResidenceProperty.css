@@ -69,9 +69,13 @@ h4 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+.move-in-h {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5) !important;
+}
+
 h6 {
     font-size: clamp(1rem, 2vw, 2.5rem);
-    line-height: 3vw;
+    line-height: 1.5rem;
     text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
 
 }
@@ -105,9 +109,9 @@ img {
 /* ResidenceProperty.css */
 
 /* Default line-height for small screens */
-.basic-info-desc .experience{
-    line-height: 2rem; /* Default for small screens */
-}
+/* .basic-info-desc .experience{
+    line-height: 2rem; /* Default for small screens 
+} */
 
 /* Line-height for medium and large screens */
 @media (min-width: 768px) {
@@ -118,6 +122,10 @@ img {
     ul li {
         line-height: 3rem;
     }
+
+    h6 {
+        line-height: 2rem;
+    }
 }
 
 @media (min-width: 992px) {
@@ -127,6 +135,10 @@ img {
 
     ul li {
         line-height: 4rem;
+    }
+
+    h6 {
+        line-height: 3rem;
     }
 }
 

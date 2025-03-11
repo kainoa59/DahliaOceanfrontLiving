@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import './index.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,16 +19,27 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 992 && navRef.current?.classList.contains('show')) {
+        navRef.current.classList.remove('show'); // Close menu on resize
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     // ran
     <Router basename="/"> {/* Set the basename to the GitHub Pages subdirectory */}
       <div className="main">
         <header>
           <nav className="navbar navbar-expand-lg bg-body-tertiary py-0">
-            <div className="container-fluid pb-0">
-              <NavLink className="navbar-brand px-4" to="/">Dahlia Coastal Living IB</NavLink>
+            <div className="container-fluid pb-0 px-0">
+              <NavLink className="navbar-brand px-4 py-3" to="/">Dahlia Coastal Living IB</NavLink>
               <button
-                className="navbar-toggler px-4"
+                className="navbar-toggler border-0 px-4"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -39,18 +50,18 @@ function App() {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse pb-0" id="navbarSupportedContent" ref={navRef}>
-                <ul className="navbar-nav ms-auto mb-2 mb-lg-0 px-4">
+                <ul className="navbar-nav ms-auto mb-lg-0 px-4">
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/" onClick={handleNavItemClick}>Home</NavLink>
+                    <NavLink className="nav-link py-0" to="/" onClick={handleNavItemClick}>Home</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/residence-property" onClick={handleNavItemClick}>Residence & Property</NavLink>
+                    <NavLink className="nav-link py-0" to="/residence-property" onClick={handleNavItemClick}>Residence & Property</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/contact-availability" onClick={handleNavItemClick}>Availability</NavLink>
+                    <NavLink className="nav-link py-0" to="/contact-availability" onClick={handleNavItemClick}>Availability</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/gallery" onClick={handleNavItemClick}>Gallery</NavLink>
+                    <NavLink className="nav-link py-0" to="/gallery" onClick={handleNavItemClick}>Gallery</NavLink>
                   </li>
                 </ul>
               </div>

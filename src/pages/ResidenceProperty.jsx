@@ -109,7 +109,7 @@ const ResidenceProperty = () => {
                         </div>
                         <div className='row policy-info-list mb-4 px-4'>
                             <ul>
-                                <li className="list-element">Western properties imperial beach is a smoke-free environment</li>
+                                <li className="list-element">Western Properties Imperial Beach is a smoke-free environment</li>
                                 <li className="list-element">Tenant is responsible for water, gas and electricity (& cable if desired)</li>
                                 <li className="list-element">Edco trash service is included</li>
                                 <li className="list-element">Front yards are maintained with landscape service</li>
@@ -135,21 +135,21 @@ const ResidenceProperty = () => {
                                 </li>
                                 <li className="list-element">Security deposit is $2,000
                                 </li>
-                                <li className="list-element">Western properties imperial beach does business in accordance with the federal fair housing act</li>
+                                <li className="list-element">Western Properties Imperial Beach does business in accordance with the Federal Fair Housing Act</li>
                             </ul>
                         </div>
                         <div className='hr-tag'>
                             <hr style={{ width: '100%' }}></hr>
                         </div>
                         <div className='row header move-in'>
-                            <h4>Ready To Move In?</h4>
+                            <h4 className='move-in-h'>Ready To Move In?</h4>
                         </div>
                         <div className='hr-tag'>
                             <hr style={{ width: '60%' }}></hr>
                         </div>
                         <div className='row move-in-list'>
                             <h3>Email: DMCCLOSKEY1@COX.NET</h3>
-                            <h3>Phone: 1-(619)-424-6391</h3>
+                            <h3>Phone: 1-(619)-424-6351</h3>
                         </div>
                         <div className='hr-tag'>
                             <hr style={{ width: '60%' }}></hr>
