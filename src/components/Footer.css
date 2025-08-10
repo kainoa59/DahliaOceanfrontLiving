@@ -1,0 +1,27 @@
+/* FOOTER STYLING */
+
+.footer {
+    background-color: #2C6299;
+    color: white;
+    width: 100%;
+    height: 4vh;
+    position: fixed;
+    bottom: 0;
+    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.5), inset 0px -10px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  .footer p {
+    margin: 0;
+    font-size: 1.2vh;
+    position: relative;
+  }
+  
+  .footer .container {
+    /* stuff here */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

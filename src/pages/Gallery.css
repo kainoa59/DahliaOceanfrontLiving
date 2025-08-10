@@ -1,0 +1,86 @@
+/* GALLERY PAGE */
+/* Hide numbers in carousel indicators */
+.carousel-indicators li {
+    list-style-type: none;
+    /* Remove any default list styling (including numbers) */
+}
+
+.carousel-indicators li::after {
+    content: "";
+    /* Ensures no numbers or text are inserted after each indicator */
+}
+
+.background {
+    background: linear-gradient(to bottom, rgba(37, 127, 223, 0.879) 0%, rgba(125, 186, 232, 0.524) 100%);
+    padding-bottom: 6vh;
+}
+
+.hr-tag {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#carouselExampleControls {
+    max-height: 85vh;
+    max-width: 100vh;
+}
+
+.content-container {
+    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.5), -12px 0 8px -4px rgba(31, 73, 125, 0.5);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.631) 0%, rgba(255, 255, 255, 0.353) 100%);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white
+}
+
+.carousel-inner{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border: white 1px solid;
+    max-height: 85vh;
+    max-width: 100vh;
+}
+
+.carousel-item img{
+    max-height: 85vh;    
+    max-width: 100vh;
+}
+
+.home-title {
+    color: aliceblue;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: clamp(1rem, 5vw, 5rem);
+}
+
+.img-thumbnail {
+    border-radius: 0 !important; 
+    border: white 1px solid;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    aspect-ratio: 6 / 5;      /* Slightly wider than square */
+    width: 180px;
+    height: 150px;
+    min-width: 96px;
+    min-height: 80px;
+    display: block;
+} 
+
+/* For tablets and below */
+@media (max-width: 1400px) {
+    .img-thumbnail {
+        width: 144px;
+        height: 120px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 900px) {
+    .img-thumbnail {
+        width: 96px;
+        height: 80px;
+    }
+}

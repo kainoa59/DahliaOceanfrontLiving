@@ -1,0 +1,115 @@
+body.home-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.all-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle closest-corner,#176a2a00 30%,#ffffff8a), url('/Compressed_Images/IMG_1903.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+.home-title {
+    color: black !important;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7) !important;
+    font-size: clamp(1rem, 5vw, 3rem) !important;
+}
+
+.hrTag {
+    margin: 1vw;
+}
+
+.textbox {
+    background: rgba(255, 255, 255, 0.3);
+    background: linear-gradient(to bottom, rgba(44, 132, 225, 0.8) 0%, rgba(89, 157, 224, 0.8) 50%, rgba(89, 157, 224, 0.8) 52%, rgba(125, 185, 232, 0.8) 100%);
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+}
+
+.home-desc {
+    color: black;
+    font-weight: 600;
+    /* text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); */
+}
+
+/* Responsive Design
+@media (max-width: 850px) {
+    .home-title {
+        padding-top: 25vh;
+    }
+} */
+
+.home-container {
+    flex-grow: 1;
+    justify-content: center;
+    position: absolute;
+    top: 8.5%; 
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.home-button-container {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    bottom: 15%;
+}
+
+/* Buttons */
+.homeButton {
+    background: #4396e8c9;
+    border: 1px solid white; 
+    color: black;
+    font-weight: 600;
+    font-size: 2.3vw;
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.5);
+    padding: 10px 30px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+    width: 30%;
+  }
+  
+
+.homeButton:hover {
+    background-color: rgba(24, 121, 200, 0.877);
+    border-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.homeButton:active {
+    background-color: rgb(24, 121, 200) !important;
+    color: rgb(203, 203, 203) !important;
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 6.6vw; 
+        margin-bottom: 10%;
+    }
+    .home-desc {
+        font-size: 3.7vw; 
+    }
+}
