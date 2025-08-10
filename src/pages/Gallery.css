@@ -60,4 +60,27 @@
     border-radius: 0 !important; 
     border: white 1px solid;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    aspect-ratio: 6 / 5;      /* Slightly wider than square */
+    width: 180px;
+    height: 150px;
+    min-width: 96px;
+    min-height: 80px;
+    display: block;
 } 
+
+/* For tablets and below */
+@media (max-width: 1400px) {
+    .img-thumbnail {
+        width: 144px;
+        height: 120px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 900px) {
+    .img-thumbnail {
+        width: 96px;
+        height: 80px;
+    }
+}

@@ -5,11 +5,10 @@ body {
     padding: 0;
 }
 
-main {
+.residence-property-page main {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Ensure the main container takes the full height of the viewport */
 }
 
 .background {
@@ -54,8 +53,9 @@ main {
 }
 
 .header {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    /* margin-top: 1rem; */
+    margin-bottom: 2rem;
+    width: 100%;
 }
 
 h3 {

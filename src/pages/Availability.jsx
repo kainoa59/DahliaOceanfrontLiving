@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 const Availability = () => {
     const listings = [
         { number: 1895, unit1: { number: 304, availability: false }, unit2: { number: 306, availability: false } },
-        { number: 1896, unit1: { number: 312, availability: false }, unit2: { number: 314, availability: true } },
+        { number: 1896, unit1: { number: 312, availability: false }, unit2: { number: 314, availability: false } },
         { number: 1897, unit1: { number: 318, availability: false }, unit2: { number: 320, availability: false } },
         { number: 1898, unit1: { number: 324, availability: false }, unit2: { number: 326, availability: false } },
         { number: 1899, unit1: { number: 330, availability: false }, unit2: { number: 332, availability: true } },
@@ -19,7 +19,7 @@ const Availability = () => {
     const columnsPerRow = 2; // Set to 2 so each row has two cards unless it's the last one
 
     return (
-        <main className='main'>
+        <main className='main availability-page'>
             <div className="container-fluid background pt-4 px-6" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
                 <div className="content-container px-3">
                     <div className="row">
@@ -57,7 +57,7 @@ const Availability = () => {
                             <hr style={{ width: '60%' }}></hr>
                         </div>
                         {/* Extra row with one card */}
-                        <div className="row justify-content-center mt-3" style={{ marginBottom: '-15%' }}>
+                        <div className="row justify-content-center mt-3">
                             <div className="col-12 mb-4">
                                 <div className="card rounded-0 last-card">
                                     <div className="image-container">

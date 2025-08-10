@@ -33,7 +33,7 @@ function App() {
   return (
     // ran
     <Router basename="/"> {/* Set the basename to the GitHub Pages subdirectory */}
-      <div className="main">
+      <div className="all">
         <header>
           <nav className="navbar navbar-expand-lg bg-body-tertiary py-0">
             <div className="container-fluid pb-0 px-0">

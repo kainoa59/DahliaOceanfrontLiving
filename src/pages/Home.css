@@ -14,7 +14,6 @@ body.home-page {
 }
 
 .background-container {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,34 +22,32 @@ body.home-page {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 90vh;
 }
 
 .home-title {
-    color: aliceblue;
+    color: black !important;
     font-weight: 700;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    margin-bottom: 3%;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7) !important;
     font-size: clamp(1rem, 5vw, 3rem) !important;
 }
 
 .hrTag {
-    margin: 2vw;
+    margin: 1vw;
 }
 
 .textbox {
     background: rgba(255, 255, 255, 0.3);
     background: linear-gradient(to bottom, rgba(44, 132, 225, 0.8) 0%, rgba(89, 157, 224, 0.8) 50%, rgba(89, 157, 224, 0.8) 52%, rgba(125, 185, 232, 0.8) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.5);
     width: 100%;
     text-align: center;
 }
 
 .home-desc {
-    color: white;
+    color: black;
     font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    /* Adds a subtle shadow for better readability */
+    /* text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); */
 }
 
 /* Responsive Design
@@ -64,8 +61,8 @@ body.home-page {
     flex-grow: 1;
     justify-content: center;
     position: absolute;
-    top: 10%; /* Adjust the top position */
-    width: 70%; /* You can adjust this value to control the width of the container */
+    top: 8.5%; 
+    width: 70%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,13 +81,14 @@ body.home-page {
 /* Buttons */
 .homeButton {
     background: #4396e8c9;
-    border: 1px solid white;  /* White outline added */
-    color: white;
+    border: 1px solid white; 
+    color: black;
     font-weight: 600;
     font-size: 2.3vw;
     box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.5);
     padding: 10px 30px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+    width: 30%;
   }
   
 
@@ -108,10 +106,10 @@ body.home-page {
 /* For screens smaller than 480px */
 @media (max-width: 480px) {
     .home-title {
-        font-size: 6.6vw; /* Even smaller font for mobile devices */
+        font-size: 6.6vw; 
         margin-bottom: 10%;
     }
     .home-desc {
-        font-size: 3.7vw; /* Even smaller font for mobile devices */
+        font-size: 3.7vw; 
     }
 }
