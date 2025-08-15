@@ -21,7 +21,7 @@ const Home = () => {
             <small>Imperial Beach</small>
             </span>
           </h1>
-          <div className="px-4 py-1 mt-2 textbox">
+          <div className="px-2 py-1 mt-2 textbox">
             <hr className="hrTag mb-3 mt-1" />
             <h5 className="home-desc">
               Enjoy 2 bedroom 1 bath duplexes in a peaceful environment with the

@@ -36,8 +36,8 @@ function App() {
       <div className="all">
         <header>
           <nav className="navbar navbar-expand-lg bg-body-tertiary py-0">
-            <div className="container-fluid pb-0 px-0">
-              <NavLink className="navbar-brand px-4 py-3" to="/">Dahlia Coastal Living IB</NavLink>
+            <div className="container-fluid pb-0 px-0 h-100">
+              <NavLink className="navbar-brand px-4" to="/">Dahlia Coastal Living IB</NavLink>
               <button
                 className="navbar-toggler border-0 px-4"
                 type="button"

@@ -90,8 +90,10 @@ body,
 }
 
 .navbar .navbar-brand {
+  display: flex;
   color: #2c6299; /* Change the color of the navbar brand */
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for better readability */
   height: 100%;
+  align-items: center;
 }

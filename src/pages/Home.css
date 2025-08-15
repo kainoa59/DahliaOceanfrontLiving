@@ -43,13 +43,19 @@ body.home-page {
     rgba(125, 185, 232, 0.8) 100%
   );
   box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 70%;
   text-align: center;
+}
+
+@media (max-width: 640px) {
+    .textbox {
+        width: 90%;
+    }
 }
 
 .home-desc {
   color: black;
-  font-weight: 600;
+  font-weight: 500;
   font-size: clamp(1rem, 2vw, 1.5rem) !important;
   /* text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); */
 }
@@ -66,7 +72,7 @@ body.home-page {
   justify-content: center;
   position: absolute;
   top: 7.5%;
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
