@@ -6,11 +6,11 @@ import Footer from '../components/Footer';
 const Availability = () => {
     const listings = [
         { number: 1895, unit1: { number: 304, availability: false }, unit2: { number: 306, availability: false } },
-        { number: 1896, unit1: { number: 312, availability: false }, unit2: { number: 314, availability: false } },
+        { number: 1896, unit1: { number: 312, availability: true }, unit2: { number: 314, availability: false } },
         { number: 1897, unit1: { number: 318, availability: false }, unit2: { number: 320, availability: false } },
         { number: 1898, unit1: { number: 324, availability: false }, unit2: { number: 326, availability: false } },
         { number: 1899, unit1: { number: 330, availability: false }, unit2: { number: 332, availability: true } },
-        { number: 1900, unit1: { number: 338, availability: false }, unit2: { number: 340, availability: false } },
+        { number: 1900, unit1: { number: 338, availability: false }, unit2: { number: 340, availability: true } },
         { number: 1901, unit1: { number: 346, availability: false }, unit2: { number: 348, availability: false } },
         { number: 1902, unit1: { number: 354, availability: false }, unit2: { number: 356, availability: false } },
     ];

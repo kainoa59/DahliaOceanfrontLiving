@@ -33,12 +33,17 @@ body,
   );
   z-index: 1000; /* Ensure it's above other content */
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow to the navbar */
-  height: 6vh; /* Adjust height of the navbar */
+  height: 5vh; /* Adjust height of the navbar */
+  min-height: 30px;
 }
 
 .navbar-toggler {
   transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out !important; /* Smooth transition for box-shadow */
   border: 1px solid transparent !important; /* Remove the border */
+}
+
+.navbar-toggler-icon{
+  max-height: 5vh;
 }
 
 .navbar-toggler:focus {
@@ -63,6 +68,7 @@ body,
   align-items: center;
   color: #4396e8; /* Change the color of the nav links */
   font-weight: 700;
+  font-size: clamp(0.8rem, 1.2vw, 1.5rem); /* min, preferred, max */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
@@ -70,7 +76,7 @@ body,
 
 
 .navbar-collapse ul a {
-  max-height: 6vh;
+  max-height: 5vh;
   transition: height 0.5s ease;
 }
 

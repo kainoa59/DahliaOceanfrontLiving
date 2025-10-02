@@ -39,7 +39,7 @@ function App() {
             <div className="container-fluid pb-0 px-0 h-100">
               <NavLink className="navbar-brand px-4" to="/">Dahlia Coastal Living IB</NavLink>
               <button
-                className="navbar-toggler border-0 px-4"
+                className="navbar-toggler border-0 px-4 py-0"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
